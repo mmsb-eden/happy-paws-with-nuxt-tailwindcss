@@ -32,7 +32,8 @@
                 id="base-button"
                 size="xl"
                 label="Adopt Now"
-                to="adopt"
+                target="_blank"
+                to="https://github.com/pinegrow/happy-paws-with-nuxt-tailwindcss"
               >
                 <div class="inline-block ml-1 p-1.5 text-lg">Adopt Now</div>
                 <Icon
