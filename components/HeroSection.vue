@@ -29,7 +29,6 @@
                 adipiscing elit. Curabitur ac sagittis neque, vel egestas est.
               </p>
               <BaseButton
-                id="base-button"
                 size="xl"
                 label="Adopt Now"
                 target="_blank"

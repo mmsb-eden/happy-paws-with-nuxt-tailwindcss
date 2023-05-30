@@ -52,7 +52,6 @@
       <li>
         <div class="flex justify-start ml-1 mt-4">
           <BaseButton
-            id="base-button"
             variant="ghost"
             class="flex font-medium text-sm"
             @click="scrollBehavior"

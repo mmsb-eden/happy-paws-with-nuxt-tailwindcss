@@ -27,15 +27,11 @@
     <div
       class="flex flex-col h-full overflow-hidden rounded-lg shadow surface-container"
     >
-      <NuxtLink id="base-button" class="-mt-2 -mx-6" :to="articleLink">
+      <NuxtLink class="-mt-2 -mx-6" :to="articleLink">
         <img alt="..." :src="article.social_image" />
       </NuxtLink>
       <div class="p-4">
-        <NuxtLink
-          id="base-button"
-          class="-mx-6 mb-2 whitespace-pre-wrap"
-          :to="articleLink"
-        >
+        <NuxtLink class="-mx-6 mb-2 whitespace-pre-wrap" :to="articleLink">
           <h5>
             {{ article.title }}
           </h5>
@@ -46,7 +42,6 @@
         <div class="font-semibold mt-4 text-xs">
           <BaseButton
             v-for="(tag, index) in article.tag_list"
-            id="base-button"
             :key="index"
             class="mb-1 mr-1"
             size="xs"
@@ -56,13 +51,12 @@
           >
         </div>
       </div>
-      <div id="sheet" class="pg-on-primary-text pg-primary">
+      <div class="pg-on-primary-text pg-primary">
         <div
           class="flex items-center justify-between mt-auto p-4 rounded-b-lg shadow-2xl"
         >
           <BaseButton
             v-if="article.user"
-            id="base-button"
             class="!bg-transparent flex items-center mr-2 space-x-2"
             variant="ghost"
             @click="fetchUser(article.user.username)"

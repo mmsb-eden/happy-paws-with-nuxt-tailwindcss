@@ -20,12 +20,7 @@
             </p>
           </div>
           <div class="px-4 text-center w-full">
-            <BaseButton
-              id="base-button"
-              size="xl"
-              to="/adopt"
-              color="secondary"
-            >
+            <BaseButton size="xl" to="/adopt" color="secondary">
               <span>Meet Them All ></span>
             </BaseButton>
           </div>

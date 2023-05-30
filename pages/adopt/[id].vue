@@ -6,14 +6,14 @@
   })
 </script>
 <template>
-  <div id="sheet" class="py-12">
+  <div class="py-12">
     <div class="container mx-auto px-4 relative">
       <div class="container mx-auto pl-12 pr-8 pt-4 relative">
         <div class="px-8">
           <div class="flex flex-wrap lg:justify-between">
             <div class="py-4 text-center w-full lg:w-fit">
               <NuxtLink to="/adopt">
-                <BaseButton id="base-button">
+                <BaseButton>
                   <span>&lt;- Go Back</span>
                 </BaseButton>
               </NuxtLink>
@@ -35,7 +35,7 @@
             <div
               class="flex flex-wrap justify-center text-center w-full lg:flex-nowrap lg:text-left"
             >
-              <div id="sheet" class="w-full">
+              <div class="w-full">
                 <img
                   :src="pet.imageUrl"
                   class="rounded-xl w-full"
@@ -44,7 +44,7 @@
                   height="600"
                 />
               </div>
-              <div id="sheet" class="py-8 w-full sm:px-16">
+              <div class="py-8 w-full sm:px-16">
                 <ul>
                   <li class="mb-4">
                     <span class="font-semibold">Breed:</span
@@ -77,7 +77,6 @@
                 </ul>
               </div>
               <div
-                id="sheet"
                 class="max-w-xs py-8 rounded-xl w-full sm:px-8 pg-primary pg-on-primary-text"
               >
                 <ul>

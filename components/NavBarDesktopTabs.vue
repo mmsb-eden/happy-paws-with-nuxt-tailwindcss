@@ -15,7 +15,7 @@
   })
 </script>
 <template>
-  <div class="h-full hidden items-center md:flex md:ml-6">
+  <div class="h-full items-center">
     <div class="flex h-full space-x-2">
       <BaseButton
         v-for="(navlink, index) in navlinks"

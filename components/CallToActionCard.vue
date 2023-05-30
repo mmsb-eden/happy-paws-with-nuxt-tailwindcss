@@ -25,12 +25,7 @@
       :style="imgStyle"
     >
       <NuxtLink :to="to" class="group mx-auto w-5/6">
-        <BaseButton
-          id="base-button"
-          size="xl"
-          class="font-semibold rounded-lg w-full"
-          block
-        >
+        <BaseButton size="xl" class="font-semibold rounded-lg w-full" block>
           <div class="font-semibold my-2 text-center">
             {{ action }}
           </div>

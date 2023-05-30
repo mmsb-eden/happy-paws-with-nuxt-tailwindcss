@@ -16,7 +16,6 @@
         <div class="flex items-center">
           <h6>Source for this blog</h6>
           <BaseButton
-            id="base-button"
             size="xs"
             class="ml-2"
             color="secondary"
@@ -29,7 +28,6 @@
         <div class="flex items-center mt-2">
           <h6>For free public APIs</h6>
           <BaseButton
-            id="base-button"
             size="xs"
             class="ml-2"
             color="secondary"

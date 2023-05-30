@@ -29,7 +29,6 @@
 <template>
   <div class="m-3 w-full md:w-6/12 lg:w-4/12 xl:w-3/12">
     <div
-      id="sheet"
       class="pg-on-surface-container-text pg-surface-container px-6 py-12 rounded-3xl shadow-xl text-center"
     >
       <img
@@ -45,7 +44,7 @@
       <p class="mb-6 pg-secondary-text text-sm">
         {{ breed }}
       </p>
-      <BaseButton id="base-button" size="lg" :to="`/adopt/${id}`">
+      <BaseButton size="lg" :to="`/adopt/${id}`">
         <span>Adopt Now</span>
         <Icon
           name="ri:heart-add-fill"

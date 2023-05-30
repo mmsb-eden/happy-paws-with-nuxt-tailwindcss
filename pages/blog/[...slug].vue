@@ -19,14 +19,12 @@
 </script>
 <template>
   <section>
-    <div id="sheet" class="mt-12 mx-auto px-4 w-full">
+    <div class="mt-12 mx-auto px-4 w-full">
       <div class="flex flex-col p-4 rounded-lg">
         <article class="dark:xl:divide-gray-700 xl:divide-gray-200 xl:divide-y">
           <header class="pt-6 relative space-y-1 text-center xl:pb-10">
             <div class="flex justify-center mb-4 lg:absolute lg:justify-start">
-              <BaseButton id="base-button" to="/blog"
-                ><span>&lt;- Go Back</span>
-              </BaseButton>
+              <BaseButton to="/blog"><span>&lt;- Go Back</span> </BaseButton>
             </div>
             <div>
               <PostDate :date="post.date" />
@@ -43,7 +41,6 @@
               <TheAuthor v-bind="author" />
             </div>
             <div
-              id="sheet"
               class="hidden pl-8 pr-4 py-4 rounded-xl xl:block xl:sticky xl:top-28 pg-surface-container pg-on-surface-container-text"
             >
               <TheAuthor v-bind="author" />
@@ -66,7 +63,7 @@
                 </ContentRenderer>
               </div>
             </div>
-            <div ig="sheet" class="hidden">
+            <div class="hidden">
               <footer
                 class="dark:divide-gray-700 divide-gray-200 divide-y font-medium leading-5 text-sm xl:col-start-1 xl:row-start-2"
               >

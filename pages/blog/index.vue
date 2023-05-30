@@ -18,7 +18,6 @@
         <div class="flex items-center mt-2">
           <h6 class="mt-2">Source for this blog</h6>
           <BaseButton
-            id="base-button"
             size="xs"
             class="ml-2"
             color="secondary"

@@ -19,9 +19,7 @@
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
           pulvinar faucibus neque, nec rhoncus nunc ultrices sit amet.
         </p>
-        <BaseButton id="base-button" size="xl" to="/articles">
-          Learn More
-        </BaseButton>
+        <BaseButton size="xl" to="/articles"> Learn More </BaseButton>
       </div>
     </div>
   </div>

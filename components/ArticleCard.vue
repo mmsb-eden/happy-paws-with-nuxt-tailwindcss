@@ -25,7 +25,6 @@
               <div>
                 <div
                   v-if="article.user"
-                  id="base-button"
                   class="inline-flex items-center space-x-2"
                   variant="ghost"
                 >

@@ -9,7 +9,6 @@
 <template>
   <div
     v-if="post"
-    id="sheet"
     class="p-8 rounded-lg space-y-2 xl:grid xl:grid-cols-4 xl:items-baseline xl:space-y-0"
   >
     <PostDate :date="post.date" class="pg-primary-text" />

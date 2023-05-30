@@ -11,7 +11,6 @@
 </script>
 <template>
   <div
-    id="sheet"
     class="pb-12 text-center pg-primary-container pg-on-primary-container-text"
   >
     <div class="container mx-auto px-4">
@@ -41,13 +40,7 @@
                   type="email"
                   required
                 />
-                <BaseButton
-                  id="base-button"
-                  type="submit"
-                  class="ml-2"
-                  variant="soft"
-                  size="md"
-                >
+                <BaseButton type="submit" class="ml-2" variant="soft" size="md">
                   Sign Up
                 </BaseButton>
               </div>

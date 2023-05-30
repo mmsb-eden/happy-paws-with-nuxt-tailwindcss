@@ -13,7 +13,7 @@
         <div
           class="-mx-4 flex flex-col flex-wrap items-center pl-4 pr-8 py-4 md:flex-col md:flex-nowrap -mt-4 lg:items-start lg:w-1/3"
         >
-          <NuxtLink id="base-button" class="-ml-6" to="/">
+          <NuxtLink class="-ml-6" to="/">
             <div to="/" class="font-serif inline-flex items-center text-3xl">
               <svg
                 version="1.0"
