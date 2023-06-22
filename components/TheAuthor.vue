@@ -33,12 +33,12 @@
             <dd>{{ author }}</dd>
             <dt v-if="twitter" class="sr-only">Twitter</dt>
             <dd v-if="twitter">
-              <a
-                :href="'https://twitter.com/' + twitter"
+              <NuxtLink
                 target="_blank"
                 rel="noopener noreferrer"
                 class="link"
-                >{{ twitter }}</a
+                :to="'https://twitter.com/' + twitter"
+                >{{ twitter }}</NuxtLink
               >
             </dd>
           </dl>

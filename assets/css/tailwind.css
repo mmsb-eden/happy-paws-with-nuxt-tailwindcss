@@ -1,5 +1,5 @@
 /* Pinegrow generated Design Panel Init Begin */
-@import url('https://fonts.googleapis.com/css?family=Proza+Libre:400,500,600,700,800|Sora:100,200,300,400,500,600,700,800&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web:200,300,400,600,700,900|Fraunces:100,200,300,400,500,600,700,800,900&display=swap');
 
 /* Pinegrow generated Design Panel Init End */
 
@@ -167,7 +167,7 @@ Inspired by Material Design https://m3.material.io/styles/color/the-color-system
 }
 
 .poster:before {
-  background-image: url(https://images.unsplash.com/photo-1534361960057-19889db9621e?ixid=MnwyMDkyMnwwfDF8c2VhcmNofDMwfHxkb2d8ZW58MHx8fHwxNjgzMjc1MDI1&ixlib=rb-4.0.3q=85&fm=jpg&crop=faces&cs=srgb&w=100&h=100&fit=crop) !important;
+  background-image: url(https://images.unsplash.com/photo-1573865526739-10659fec78a5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wyMDkyMnwwfDF8c2VhcmNofDJ8fGNhdHxlbnwwfHx8fDE2ODcxNzk3MjF8MA&ixlib=rb-4.0.3&q=80&w=1080) !important;
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -188,7 +188,7 @@ body.poster:before {
   (min-width: 992px) and (-webkit-min-device-pixel-ratio: 2),
   (min-width: 992px) and (min-resolution: 192dpi) {
   .poster:before {
-    background-image: url(https://images.unsplash.com/photo-1534361960057-19889db9621e?ixid=MnwyMDkyMnwwfDF8c2VhcmNofDMwfHxkb2d8ZW58MHx8fHwxNjgzMjc1MDI1&ixlib=rb-4.0.3q=85&fm=jpg&crop=faces&cs=srgb&w=2000&fit=crop) !important;
+    background-image: url(https://images.unsplash.com/photo-1573865526739-10659fec78a5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wyMDkyMnwwfDF8c2VhcmNofDJ8fGNhdHxlbnwwfHx8fDE2ODcxNzk3MjF8MA&ixlib=rb-4.0.3&q=80&w=2000) !important;
   }
 }
 body,

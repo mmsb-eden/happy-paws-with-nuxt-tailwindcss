@@ -8,7 +8,7 @@
     :icon="
       isMobileMenuOpen ? 'material-symbols:close' : 'material-symbols:menu'
     "
-    class="!py-2 !rounded-lg"
+    class="!py-2 !rounded-lg leading-none"
     @click="openMobileMenu"
   >
     <span class="sr-only">Open main menu</span>

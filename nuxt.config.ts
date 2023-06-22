@@ -1,4 +1,4 @@
-import { fileURLToPath, URL } from 'node:url'
+// import { fileURLToPath, URL } from 'node:url'
 
 export default defineNuxtConfig({
   runtimeConfig: {
@@ -34,15 +34,15 @@ export default defineNuxtConfig({
         configPath: 'tailwind.config.ts',
         cssPath: '@/assets/css/tailwind.css',
       },
-      plugins: [
-        {
-          name: 'My Awesome Lib 3.0',
-          key: 'my-awesome-lib',
-          pluginPath: fileURLToPath(
-            new URL('./my-awesome-lib/web-types.json', import.meta.url),
-          ),
-        },
-      ],
+      // plugins: [
+      //   {
+      //     name: 'My Awesome Lib 3.0',
+      //     key: 'my-awesome-lib',
+      //     pluginPath: fileURLToPath(
+      //       new URL('./my-awesome-lib/web-types.json', import.meta.url),
+      //     ),
+      //   },
+      // ],
     },
   },
   css: ['~/assets/css/tailwind.css'],

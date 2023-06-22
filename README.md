@@ -1,18 +1,18 @@
 # Happy Paws - Full-Stack (SPA SSG/SSR) with Nuxt & Tailwind CSS!
 
-Happy Paws is a pet adoption organisation with pet personas stored in a local store, statically generated articles fetched via REST API, a blog authored with markdown files, and everything styled with the power and beauty of Tailwind CSS.
+Happy Paws is a pet adoption organization with pet personas stored in a local store, statically generated articles fetched via a REST API, a blog authored with markdown files, and everything styled with the power and beauty of Tailwind CSS.
 
-This is a sample project created using [Vue Designer Nuxt Tailwind CSS - Quick start template](https://github.com/pinegrow/pg-nuxt-tailwindcss).
+This is a sample project created using the [Vue Designer Nuxt Tailwind CSS - Quick start template](https://github.com/pinegrow/pg-nuxt-tailwindcss).
 
 ## Vue Designer
 
-A desktop drag-and-drop editor for Vue apps supporting Mac, Windows and Linux by [Pinegrow](https://pinegrow.com/).
+A desktop visual editor for Vue apps supporting Mac, Windows, and Linux by [Pinegrow](https://pinegrow.com/). Take it for a free trial at [Vue Designer](https://pinegrow.com/vue-designer)!
 
-It let's you visually design 🎨 your Vue single file components and boosts your productivity and your creativity while building your component-based Vue apps.
+It lets you visually design 🎨 your Vue single file components and boosts your productivity and creativity while building your component-based Vue apps.
 
-It smartly integrates with your ⚡️ [Vite](https://vitejs.dev/) based CLI, and provides an amazing deverloper experience with it's powerful visual controls and features.
+It smartly integrates with your ⚡️ [Vite](https://vitejs.dev/) based CLI and provides an amazing developer experience with its powerful visual controls and features.
 
-Clean code 😃, No lock-in - Pinegrow Vue Designer is an open-tool ❤️
+Clean code 😃, No lock-in - You are in control of your projects and development workflow ❤️
 
 ## Try it now!
 
@@ -32,7 +32,7 @@ npm install #or use pnpm
 
 ## 2. Open in Vue Designer
 
-Open your project in Vue Designer, and follow the instructions displayed in the Config Panel (that should pop-out automatically). Config Panel ⚙️ displays the key packages and the various links to their individual ecosystem and community.
+Open your project in Vue Designer and follow the instructions displayed in the Config Panel (that should pop out automatically). Config Panel ⚙️ displays the key packages and the various links to their individual ecosystems and communities.
 
 ## Usage
 
@@ -57,9 +57,10 @@ npm run generate # SPA SSG (full-static)
 
 And you will see the generated file in `dist` that's ready to be served.
 
-### Deploy on Netlify
+### Deploy to Netlify
 
-Go to [Netlify](https://app.netlify.com/start) and select your clone, `OK` along the way, and your app will be live in a minute.
+You can deploy this repo as a site on your own to explore and experiment with, by clicking this button.
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/pinegrow/happy-paws-with-nuxt-tailwindcss)
 
 Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
 
@@ -72,18 +73,18 @@ Check out the [deployment documentation](https://nuxt.com/docs/getting-started/d
 
 - [Tailwind CSS](https://tailwindcss.com/docs/guides/nuxtjs#3) - The amazing utility-first CSS framework.
 
-### Filed-based CMS (markdown)
+### File-based CMS (markdown)
 
-- [Nuxt Content](https://github.com/nuxt/content) - file-based CMS for powered by Markdown & Vue components. Note: This page is a markdown file 🗒.
+- [Nuxt Content](https://github.com/nuxt/content) - file-based CMS powered by Markdown & Vue components. Note: This page is a markdown file 🗒.
 
 ### Icons
 
-- [Nuxt Icon](https://github.com/nuxt-modules/icon) - use over 100,000 open-source [Iconify](https://iconify.design/) icons. Uses the **iconify** format for icon names, for eg, `mdi:home`.
+- [Nuxt Icon](https://github.com/nuxt-modules/icon) - use over 100,000 open-source [Iconify](https://iconify.design/) icons. Uses the **iconify** format for icon names, for example, `mdi:home`.
 
 ### Modules/Plugins
 
 - [VueUse](https://vueuse.org/) - collection of essential Vue composition utilities.
-- [Pinegrow Nuxt Module](https://www.npmjs.com/package/@pinegrow/nuxt-module) - enables you to live-design your Vue single-file-components visually in Vue Designer.
+- [Pinegrow Nuxt Module](https://www.npmjs.com/package/@pinegrow/nuxt-module) - enables you to live-design your Vue single-file components visually in Vue Designer.
 - [Pinegrow Tailwind CSS Plugin](https://www.npmjs.com/package/@pinegrow/tailwindcss-plugin) - via Design Panel, enables visual controls customization (automatic) and theme customization (optional).
 
 ### Devtools
@@ -107,7 +108,7 @@ Check out the [deployment documentation](https://nuxt.com/docs/getting-started/d
 
 ### Typescript
 
-Allows JS & strict mode is turned off. Update `tsconfig.ts` as required.
+This project allows JS, and strict mode is turned off. Update `tsconfig.ts` as required.
 
 ```json
 {
@@ -122,4 +123,4 @@ Allows JS & strict mode is turned off. Update `tsconfig.ts` as required.
 
 ## Community
 
-- [Pinegrow Vue Designer](https://forum.pinegrow.com/vue-designer)
+- [Pinegrow Vue Designer](https://forum.pinegrow.com/c/vue-designer)

@@ -25,7 +25,10 @@
             <div
               class="flex items-center justify-center py-4 space-x-4 text-center w-full lg:w-fit"
             >
-              <Icon name="ph:envelope-simple-duotone" size="28px"></Icon>
+              <Icon
+                name="material-symbols:mark-email-unread-outline"
+                size="28px"
+              ></Icon>
               <Icon name="logos:whatsapp-icon" size="28px"></Icon>
               <Icon name="logos:facebook" size="28px"></Icon>
               <Icon name="logos:twitter" size="28px"></Icon>

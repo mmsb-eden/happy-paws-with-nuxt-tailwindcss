@@ -1,8 +1,8 @@
 <script setup lang="ts">
-  definePageMeta({
-    title: 'Articles',
-    navOrder: 4,
-  })
+  // definePageMeta({
+  //   title: 'Articles',
+  //   navOrder: 4,
+  // })
 
   useHead({
     title: () => 'Articles',
@@ -21,8 +21,7 @@
             color="secondary"
             to="https://developers.forem.com/api/v1"
             target="_blank"
-          >
-            <span>Click here</span>
+            ><span>Click here</span>
           </BaseButton>
         </div>
         <div class="flex items-center mt-2">
@@ -33,8 +32,7 @@
             color="secondary"
             to="https://github.com/public-apis/public-apis#personality"
             target="_blank"
-          >
-            <span>Click here</span>
+            ><span>Click here</span>
           </BaseButton>
         </div>
       </div>

@@ -24,9 +24,9 @@
                 Thousands of homeless dogs, one act of kindness
               </h1>
               <p class="font-thin mb-6 text-gray-300">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
-                vitae congue tortor. Lorem ipsum dolor sit amet, consectetur
-                adipiscing elit. Curabitur ac sagittis neque, vel egestas est.
+                Find your new furry friend today! We have a wide variety of
+                lovable pets available for adoption. Come visit us and take home
+                your new best friend!
               </p>
               <BaseButton
                 size="xl"

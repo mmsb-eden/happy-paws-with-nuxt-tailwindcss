@@ -23,14 +23,14 @@
   })
 </script>
 <template>
-  <div class="rounded-lg pg-surface-container">
+  <div class="h-full pg-surface-container rounded-lg">
     <div
       class="flex flex-col h-full overflow-hidden rounded-lg shadow surface-container"
     >
       <NuxtLink class="-mt-2 -mx-6" :to="articleLink">
         <img alt="..." :src="article.social_image" />
       </NuxtLink>
-      <div class="p-4">
+      <div class="grow p-4">
         <NuxtLink class="-mx-6 mb-2 whitespace-pre-wrap" :to="articleLink">
           <h5>
             {{ article.title }}
@@ -51,7 +51,7 @@
           >
         </div>
       </div>
-      <div class="pg-on-primary-text pg-primary">
+      <div class="bg-primary-500">
         <div
           class="flex items-center justify-between mt-auto p-4 rounded-b-lg shadow-2xl"
         >

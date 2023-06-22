@@ -27,9 +27,9 @@
   })
 </script>
 <template>
-  <div class="m-3 w-full md:w-6/12 lg:w-4/12 xl:w-3/12">
+  <div class="w-full md:w-6/12 lg:w-4/12 xl:w-3/12">
     <div
-      class="pg-on-surface-container-text pg-surface-container px-6 py-12 rounded-3xl shadow-xl text-center"
+      class="m-3 pg-on-surface-container-text pg-surface-container px-6 py-12 rounded-3xl shadow-xl text-center"
     >
       <img
         :src="imageUrl"
