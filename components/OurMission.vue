@@ -11,7 +11,9 @@
         />
       </div>
       <div class="mx-auto p-4 w-full lg:w-5/12">
-        <h6 class="mb-2 pg-primary-text uppercase">Our Mission</h6>
+        <h6 class="mb-2 text-primary-600 dark:text-primary-200 uppercase">
+          Our Mission
+        </h6>
         <h3 class="capitalize mb-2">
           Life changing experience for a valuable cause
         </h3>

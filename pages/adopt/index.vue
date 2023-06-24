@@ -9,7 +9,9 @@
   })
 </script>
 <template>
-  <div class="py-12 pg-primary-container pg-on-primary-container-text">
+  <div
+    class="py-12 bg-primary-100 dark:bg-primary-700 text-primary-900 dark:text-primary-100"
+  >
     <div class="flex flex-col items-center">
       <div class="px-4 text-center w-full lg:w-7/12">
         <h6 class="uppercase">Adopt A Pet</h6>

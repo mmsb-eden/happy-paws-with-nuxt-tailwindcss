@@ -20,7 +20,11 @@
           />
         </div>
         <div class="lg:w-6/12 mx-auto p-4 w-full">
-          <h6 class="font-bold mb-2 pg-primary-text uppercase">Our Work</h6>
+          <h6
+            class="font-bold mb-2 text-primary-600 dark:text-primary-200 uppercase"
+          >
+            Our Work
+          </h6>
           <h3 class="capitalize mb-6">Impact we make</h3>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus

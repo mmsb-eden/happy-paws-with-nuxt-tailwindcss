@@ -41,7 +41,7 @@
               <TheAuthor v-bind="author" />
             </div>
             <div
-              class="hidden pl-8 pr-4 py-4 rounded-xl xl:block xl:sticky xl:top-28 pg-surface-container pg-on-surface-container-text"
+              class="hidden pl-8 pr-4 py-4 rounded-xl xl:block xl:sticky xl:top-28 bg-neutral-50 dark:bg-neutral-900 text-neutral-900 dark:text-neutral-100"
             >
               <TheAuthor v-bind="author" />
               <TableOfContents
@@ -68,7 +68,7 @@
                 class="dark:divide-gray-700 divide-gray-200 divide-y font-medium leading-5 text-sm xl:col-start-1 xl:row-start-2"
               >
                 <!-- <div v-if="nextPost" class="py-8">
-                  <span class="pg-primary-text text-xs tracking-wide uppercase"
+                  <span class="text-primary-600 dark:text-primary-200 text-xs tracking-wide uppercase"
                     >Next Article</span
                   >
                   <div class="link">
@@ -76,7 +76,7 @@
                   </div>
                 </div>
                 <div v-if="prevPost" class="py-8">
-                  <span class="pg-primary-text text-xs tracking-wide uppercase"
+                  <span class="text-primary-600 dark:text-primary-200 text-xs tracking-wide uppercase"
                     >Previous Article</span
                   >
                   <div class="link">

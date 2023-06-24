@@ -23,7 +23,7 @@
   })
 </script>
 <template>
-  <div class="h-full pg-surface-container rounded-lg">
+  <div class="h-full bg-neutral-50 dark:bg-neutral-900 rounded-lg">
     <div
       class="flex flex-col h-full overflow-hidden rounded-lg shadow surface-container"
     >
@@ -68,7 +68,9 @@
               height="400"
               :src="article.user.profile_image"
             />
-            <div class="flex flex-col items-start pg-on-primary-text">
+            <div
+              class="flex flex-col items-start text-white dark:text-primary-800"
+            >
               <h6 class="whitespace-pre-wrap">{{ article.user.name }}</h6>
               <PostDate :date="article.published_at" />
             </div>

@@ -20,7 +20,9 @@
 <template>
   <section class="container mx-auto px-4 py-12">
     <div>
-      <h6 class="pg-primary-text text-center uppercase">Get Involved</h6>
+      <h6 class="text-primary-600 dark:text-primary-200 text-center uppercase">
+        Get Involved
+      </h6>
       <h3 class="capitalize mt-3 text-center">
         Small gesture for a big impact
       </h3>

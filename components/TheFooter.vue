@@ -106,7 +106,7 @@
           <div class="inline-flex mt-6 space-x-3">
             <div class="flex flex-wrap space-x-4">
               <NuxtLink
-                href="https://www.facebook.com/vuedesigner/"
+                href="https://www.facebook.com/vuedesigner"
                 aria-label="facebook"
                 external
                 target="_blank"
@@ -114,7 +114,7 @@
                 <Icon name="logos:facebook" class="text-2xl"></Icon>
               </NuxtLink>
               <NuxtLink
-                href="https://twitter.com/vuedesigner/"
+                href="https://twitter.com/vuedesigner"
                 aria-label="twitter"
                 external
                 target="_blank"
@@ -122,15 +122,7 @@
                 <Icon name="logos:twitter" class="text-2xl"></Icon>
               </NuxtLink>
               <NuxtLink
-                href="https://forum.pinegrow.com/c/vue-designer"
-                aria-label="discourse"
-                external
-                target="_blank"
-              >
-                <Icon name="logos:discourse-icon" class="text-2xl"></Icon>
-              </NuxtLink>
-              <NuxtLink
-                href="https://www.youtube.com/@pgvuedesigner/"
+                href="https://www.youtube.com/@vuedesigner"
                 aria-label="youtube"
                 external
                 target="_blank"
@@ -147,19 +139,35 @@
         <div
           class="flex flex-col items-center p-4 w-full sm:w-1/2 md:flex-1 md:w-1/3 lg:items-start"
         >
-          <h2 class="font-bold pg-primary-text text-xl">General</h2>
+          <h2 class="font-bold text-primary-600 dark:text-primary-200 text-xl">
+            General
+          </h2>
           <ul class="text-center lg:mt-2 lg:text-left">
             <li class="mb-4">
-              <NuxtLink to="/" class="hover:pg-primary-text">FAQ</NuxtLink>
+              <NuxtLink
+                to="/"
+                class="hover:text-primary-600 dark:text-primary-200"
+                >FAQ</NuxtLink
+              >
             </li>
             <li class="mb-4">
-              <NuxtLink to="/" class="hover:pg-primary-text">News</NuxtLink>
+              <NuxtLink
+                to="/"
+                class="hover:text-primary-600 dark:text-primary-200"
+                >News</NuxtLink
+              >
             </li>
             <li class="mb-4">
-              <NuxtLink to="/" class="hover:pg-primary-text">Careers</NuxtLink>
+              <NuxtLink
+                to="/"
+                class="hover:text-primary-600 dark:text-primary-200"
+                >Careers</NuxtLink
+              >
             </li>
             <li class="mb-4">
-              <NuxtLink to="/" class="hover:pg-primary-text"
+              <NuxtLink
+                to="/"
+                class="hover:text-primary-600 dark:text-primary-200"
                 >Contact Us</NuxtLink
               >
             </li>
@@ -168,40 +176,58 @@
         <div
           class="flex flex-col items-center p-4 w-full sm:w-1/2 md:flex-1 md:w-1/3 lg:items-start"
         >
-          <h2 class="font-bold pg-primary-text text-xl">Links</h2>
+          <h2 class="font-bold text-primary-600 dark:text-primary-200 text-xl">
+            Links
+          </h2>
           <ul class="text-center lg:mt-2 lg:text-left">
             <li class="mb-4">
-              <NuxtLink to="/adopt" class="hover:pg-primary-text"
+              <NuxtLink
+                to="/adopt"
+                class="hover:text-primary-600 dark:text-primary-200"
                 >Adopt Now</NuxtLink
               >
             </li>
             <li class="mb-4">
-              <NuxtLink to="/donate" class="hover:pg-primary-text"
+              <NuxtLink
+                to="/donate"
+                class="hover:text-primary-600 dark:text-primary-200"
                 >Donate</NuxtLink
               >
             </li>
             <li class="mb-4">
-              <NuxtLink to="/articles" class="hover:pg-primary-text"
+              <NuxtLink
+                to="/articles"
+                class="hover:text-primary-600 dark:text-primary-200"
                 >Articles</NuxtLink
               >
             </li>
             <li class="mb-4">
-              <NuxtLink to="/blog" class="hover:pg-primary-text">Blog</NuxtLink>
+              <NuxtLink
+                to="/blog"
+                class="hover:text-primary-600 dark:text-primary-200"
+                >Blog</NuxtLink
+              >
             </li>
             <li class="mb-4">
-              <NuxtLink to="/volunteer" class="hover:pg-primary-text"
+              <NuxtLink
+                to="/volunteer"
+                class="hover:text-primary-600 dark:text-primary-200"
                 >Volunteer</NuxtLink
               >
             </li>
             <li class="mb-4">
-              <NuxtLink to="#" class="hover:pg-primary-text"
+              <NuxtLink
+                to="#"
+                class="hover:text-primary-600 dark:text-primary-200"
                 >Our Mission</NuxtLink
               >
             </li>
           </ul>
         </div>
         <div class="flex flex-col items-center p-4 w-full md:w-1/3">
-          <h2 class="font-bold pg-primary-text text-xl">Gallery</h2>
+          <h2 class="font-bold text-primary-600 dark:text-primary-200 text-xl">
+            Gallery
+          </h2>
           <div class="-mx-2 flex flex-wrap items-center lg:mt-2">
             <div class="p-2 w-1/2 sm:w-4/12">
               <NuxtLink

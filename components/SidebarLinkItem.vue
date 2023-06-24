@@ -27,9 +27,11 @@
     v-if="link.hash"
     :to="link"
     :class="[active ? 'font-semibold' : 'font-normal', '']"
-    class="mt-2 pg-primary-text pl-1 text-base"
+    class="mt-2 text-primary-600 dark:text-primary-200 pl-1 text-base"
     >{{ item.text }}
   </NuxtLink>
-  <span v-else class="pg-primary-text"> {{ item.text }} </span>
+  <span v-else class="text-primary-600 dark:text-primary-200">
+    {{ item.text }}
+  </span>
 </template>
 <style scoped></style>

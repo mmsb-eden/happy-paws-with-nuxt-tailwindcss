@@ -17,7 +17,9 @@
             class="-mx-4 flex flex-wrap items-center mt-24 space-y-6 lg:space-y-0"
           >
             <div class="px-4 w-full md:w-8/12 xl:w-6/12">
-              <h4 class="font-bold font-serif mb-1 pg-primary-text uppercase">
+              <h4
+                class="font-bold font-serif mb-1 text-primary-600 dark:text-primary-200 uppercase"
+              >
                 Adopt A Pet
               </h4>
               <h1 class="capitalize leading-tight mb-2 text-white">

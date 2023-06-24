@@ -80,7 +80,7 @@
                 </ul>
               </div>
               <div
-                class="max-w-xs py-8 rounded-xl w-full sm:px-8 pg-primary pg-on-primary-text"
+                class="max-w-xs py-8 rounded-xl w-full sm:px-8 bg-primary-600 dark:bg-primary-200 text-white dark:text-primary-800"
               >
                 <ul>
                   <li>
@@ -98,7 +98,7 @@
                     <Icon
                       name="bx:bxs-microchip"
                       size="24px"
-                      class="pg-tertiary-text"
+                      class="text-tertiary-600 dark:text-tertiary-200"
                     ></Icon
                     ><span class="ml-2">Microchipped</span>
                   </li>
@@ -120,16 +120,22 @@
           </div>
           <div class="mt-8 px-8 text-center lg:text-left">
             <p>
-              To adopt <span class="mx-1 pg-primary-text">{{ pet.name }} </span
+              To adopt
+              <span class="mx-1 text-primary-600 dark:text-primary-200"
+                >{{ pet.name }} </span
               ><span>or learn more, please visit our adoption centre at </span
-              ><span class="mx-1 pg-primary-text">{{ pet.location }}.</span
+              ><span class="mx-1 text-primary-600 dark:text-primary-200"
+                >{{ pet.location }}.</span
               ><span
                 >Appointments are not required and walk-ins are welcome.</span
               >
             </p>
             <p class="mt-2">
               Alternatively, please contact our {{ pet.location }} team directly
-              on <span class="pg-primary-text">03 2394 3284</span>
+              on
+              <span class="text-primary-600 dark:text-primary-200"
+                >03 2394 3284</span
+              >
             </p>
           </div>
         </div>

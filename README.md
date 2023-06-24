@@ -4,6 +4,8 @@ Happy Paws is a pet adoption organization with pet personas stored in a local st
 
 This is a sample project created using the [Vue Designer Nuxt Tailwind CSS - Quick start template](https://github.com/pinegrow/pg-nuxt-tailwindcss).
 
+Demo - https://happy-paws-with-nuxt-tailwindcss.netlify.app/
+
 ## Vue Designer
 
 A desktop visual editor for Vue apps supporting Mac, Windows, and Linux by [Pinegrow](https://pinegrow.com/). Take it for a free trial at [Vue Designer](https://pinegrow.com/vue-designer)!
@@ -123,4 +125,4 @@ This project allows JS, and strict mode is turned off. Update `tsconfig.ts` as r
 
 ## Community
 
-- [Pinegrow Vue Designer](https://forum.pinegrow.com/c/vue-designer)
+- [Vue Designer Community](https://forum.pinegrow.com/c/vue-designer)
