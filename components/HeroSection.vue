@@ -34,7 +34,7 @@
                 size="xl"
                 label="Adopt Now"
                 target="_blank"
-                to="https://github.com/pinegrow/happy-paws-with-nuxt-tailwindcss"
+                to="https://vuedesigner.com"
               >
                 <div class="inline-block ml-1 p-1.5 text-lg">Adopt Now</div>
                 <Icon
