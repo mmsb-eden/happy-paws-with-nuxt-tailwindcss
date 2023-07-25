@@ -1,6 +1,6 @@
 <script setup lang="ts">
   const { data: petsLite } = await useAsyncData('pets', async () => {
-    const pets = usePets()
+    const pets = await usePets()
     return pets.sort().slice(0, pets.length / 2)
   })
 </script>
