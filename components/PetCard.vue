@@ -27,7 +27,7 @@
   })
 </script>
 <template>
-  <div class="w-full md:w-6/12 lg:w-4/12 xl:w-3/12">
+  <NuxtLink class="w-full md:w-6/12 lg:w-4/12 xl:w-3/12" :to="`/adopt/${id}`">
     <div
       class="m-3 text-neutral-900 dark:text-neutral-100 bg-neutral-50 dark:bg-neutral-900 px-6 py-12 rounded-3xl shadow-xl text-center"
     >
@@ -44,8 +44,8 @@
       <p class="mb-6 text-secondary-600 dark:text-secondary-200 text-sm">
         {{ breed }}
       </p>
-      <BaseButton size="lg" :to="`/adopt/${id}`">
-        <span>Adopt Now</span>
+      <BaseButton size="lg" :to="`/adopt/${id}`"
+        ><span>Adopt Now</span>
         <Icon
           name="ri:heart-add-fill"
           size="24"
@@ -53,6 +53,6 @@
         ></Icon>
       </BaseButton>
     </div>
-  </div>
+  </NuxtLink>
 </template>
 <style scoped></style>

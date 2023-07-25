@@ -22,8 +22,8 @@
             </p>
           </div>
           <div class="px-4 text-center w-full">
-            <BaseButton size="xl" to="/adopt" color="secondary"
-              ><span>Meet Them All ></span>
+            <BaseButton size="xl" to="/adopt" color="secondary">
+              <span>Meet Them All ></span>
             </BaseButton>
           </div>
         </div>
