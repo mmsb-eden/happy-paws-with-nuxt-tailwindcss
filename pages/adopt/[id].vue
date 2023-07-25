@@ -1,5 +1,10 @@
 <script setup lang="ts">
-  const pet = usePet()
+  const { id } = useRoute().params
+
+  const { data: pet } = await useAsyncData('pet', async () => {
+    const pet = await usePet(id)
+    return pet
+  })
 
   useHead({
     title: () => pet.value?.name,

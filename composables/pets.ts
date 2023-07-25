@@ -1,18 +1,14 @@
 import { pets } from '~/db.json'
 
+// const apiBaseUrl =
+//   'https://my-json-server.typicode.com/pinegrow/happy-paws-with-nuxt-tailwindcss'
+
 export function usePets() {
-  // const pets = $fetch(
-  //   'https://my-json-server.typicode.com/pinegrow/happy-paws-with-nuxt-tailwindcss/pets',
-  // )
   return pets
+  // return $fetch(`${apiBaseUrl}/pets`)
 }
 
-export function usePet() {
-  const pets = usePets()
-  const route = useRoute()
-
-  const pet = computed(() => {
-    return pets.find((pet) => `${pet.id}` === route.params.id)
-  })
-  return pet
+export function usePet(id) {
+  return pets.find((pet) => `${pet.id}` === id)
+  // return $fetch(`${apiBaseUrl}/pets/${id}`)
 }
