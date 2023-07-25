@@ -1,4 +1,4 @@
-import pets from '~/data/db.json'
+import pets from '~/db.json'
 
 export function usePets() {
   return pets
