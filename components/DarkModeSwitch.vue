@@ -9,14 +9,18 @@
     @click="toggleDark()"
   >
     <transition name="slide" mode="out-in">
-      <Icon
+      <BaseIcon
         v-if="isDark"
-        name="material-symbols:dark-mode-outline"
+        name="i-material-symbols-dark-mode-outline"
         class="text-2xl"
       >
-      </Icon>
-      <Icon v-else name="material-symbols:light-mode-outline" class="text-2xl">
-      </Icon>
+      </BaseIcon>
+      <BaseIcon
+        v-else
+        name="i-material-symbols-light-mode-outline"
+        class="text-2xl"
+      >
+      </BaseIcon>
     </transition>
   </BaseButton>
 </template>

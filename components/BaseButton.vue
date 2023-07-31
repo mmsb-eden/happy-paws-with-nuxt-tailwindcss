@@ -221,21 +221,21 @@
     v-bind="buttonProps"
   >
     <slot name="leading"></slot>
-    <Icon
+    <BaseIcon
       v-if="isLeading && leadingIconName"
       :name="leadingIconName"
       :class="leadingIconClass"
       aria-hidden="true"
     />
-    <slot>
-      <span
+    <slot
+      ><span
         v-if="label"
         :class="[truncate ? 'text-left break-all line-clamp-1' : '']"
       >
         {{ label }}
       </span>
     </slot>
-    <Icon
+    <BaseIcon
       v-if="isTrailing && trailingIconName"
       :name="trailingIconName"
       :class="trailingIconClass"

@@ -37,7 +37,7 @@
                 to="https://github.com/pinegrow/happy-paws-with-nuxt-tailwindcss"
               >
                 <div class="inline-block ml-1 p-1.5 text-lg">Adopt Now</div>
-                <Icon name="noto:dog-face" size="28px"></Icon>
+                <BaseIcon name="i-noto-dog-face" height="28px"></BaseIcon>
               </BaseButton>
             </div>
           </div>

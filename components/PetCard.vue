@@ -46,11 +46,11 @@
       </p>
       <BaseButton size="lg">
         <span>Adopt Now</span>
-        <Icon
-          name="ri:heart-add-fill"
-          size="24"
-          class="text-tertiary-600 md:ml-1.5"
-        ></Icon>
+        <BaseIcon
+          name="i-ri-heart-add-fill"
+          height="20px"
+          class="!text-tertiary-600 md:ml-1.5"
+        ></BaseIcon>
       </BaseButton>
     </div>
   </NuxtLink>

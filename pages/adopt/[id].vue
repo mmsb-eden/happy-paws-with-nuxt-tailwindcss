@@ -16,9 +16,7 @@
           <div class="flex flex-wrap lg:justify-between">
             <div class="py-4 text-center w-full lg:w-fit">
               <NuxtLink to="/adopt">
-                <BaseButton>
-                  <span>&lt;- Go Back</span>
-                </BaseButton>
+                <BaseButton><span>&lt;- Go Back</span> </BaseButton>
               </NuxtLink>
             </div>
             <div class="text-center w-full lg:w-fit">
@@ -28,13 +26,13 @@
             <div
               class="flex items-center justify-center py-4 space-x-4 text-center w-full lg:w-fit"
             >
-              <Icon
-                name="material-symbols:mark-email-unread-outline"
-                size="28px"
-              ></Icon>
-              <Icon name="logos:whatsapp-icon" size="28px"></Icon>
-              <Icon name="logos:facebook" size="28px"></Icon>
-              <Icon name="logos:twitter" size="28px"></Icon>
+              <BaseIcon
+                name="i-material-symbols-mark-email-unread-outline"
+                height="28px"
+              ></BaseIcon>
+              <BaseIcon name="i-logos-whatsapp-icon" height="28px"></BaseIcon>
+              <BaseIcon name="i-logos-facebook" height="28px"></BaseIcon>
+              <BaseIcon name="i-logos-twitter" height="28px"></BaseIcon>
             </div>
           </div>
           <div class="flex flex-wrap pt-8 w-full lg:flex-nowrap">
@@ -53,32 +51,34 @@
               <div class="py-8 w-full sm:px-16">
                 <ul>
                   <li class="mb-4">
-                    <span class="font-semibold">Breed:</span
-                    ><span class="ml-2">{{ pet.breed }}</span>
+                    <span class="font-semibold">Breed:</span>
+                    <span class="ml-2">{{ pet.breed }}</span>
                   </li>
                   <li class="mb-4">
-                    <span class="font-semibold">Age:</span
-                    ><span class="ml-2">{{ pet.dateOfBirth }}</span>
+                    <span class="font-semibold">Age:</span>
+                    <span class="ml-2">{{ pet.dateOfBirth }}</span>
                   </li>
                   <li class="mb-4">
-                    <span class="font-semibold">Gender:</span
-                    ><span class="ml-2">{{ pet.sex }}</span>
+                    <span class="font-semibold">Gender:</span>
+                    <span class="ml-2">{{ pet.sex }}</span>
                   </li>
                   <li class="mb-4">
-                    <span class="font-semibold">Microchip No:</span
-                    ><span class="ml-2">{{ pet.microchip }}</span>
+                    <span class="font-semibold">Microchip No:</span>
+                    <span class="ml-2">{{ pet.microchip }}</span>
                   </li>
-                  <li class="mb-4">
-                    <Icon
-                      name="material-symbols:add-location-alt-outline-rounded"
-                      size="28px"
+                  <li
+                    class="flex items-center justify-center mb-4 lg:justify-start"
+                  >
+                    <BaseIcon
+                      name="i-material-symbols-add-location-alt-outline-rounded"
+                      height="28px"
                       class="-ml-1 font-semibold"
-                    ></Icon
-                    ><span class="ml-2">{{ pet.location }}</span>
+                    ></BaseIcon>
+                    <span class="ml-2">{{ pet.location }}</span>
                   </li>
                   <li class="mb-4">
-                    <span class="font-semibold">Includes:</span
-                    ><span class="ml-2">Vaccination</span>
+                    <span class="font-semibold">Includes:</span>
+                    <span class="ml-2">Vaccination</span>
                   </li>
                 </ul>
               </div>
@@ -86,36 +86,47 @@
                 class="max-w-xs py-8 rounded-xl w-full sm:px-8 bg-primary-600 dark:bg-primary-200 text-white dark:text-primary-800"
               >
                 <ul>
-                  <li>
-                    <Icon
-                      name="material-symbols:check-box-outline"
-                      size="28px"
-                    ></Icon>
-                    <h6 class="inline-block ml-2">Done</h6>
+                  <li class="flex items-center justify-center lg:justify-start">
+                    <BaseIcon
+                      name="i-material-symbols-check-box-outline"
+                      height="28px"
+                    ></BaseIcon
+                    ><span class="inline-block ml-2">Done</span>
                   </li>
-                  <li class="mt-4">
-                    <Icon name="twemoji:sparkling-heart" size="24px"></Icon
-                    ><span class="ml-2">Health Check</span>
+                  <li
+                    class="flex items-center justify-center mt-4 lg:justify-start"
+                  >
+                    <BaseIcon
+                      name="i-twemoji-sparkling-heart"
+                      height="24px"
+                    ></BaseIcon>
+                    <span class="ml-2">Health Check</span>
                   </li>
-                  <li class="mt-4">
-                    <Icon
-                      name="bx:bxs-microchip"
-                      size="24px"
+                  <li
+                    class="flex items-center justify-center mt-4 lg:justify-start"
+                  >
+                    <BaseIcon
+                      name="i-bx-bxs-microchip"
+                      height="24px"
                       class="text-tertiary-600 dark:text-tertiary-200"
-                    ></Icon
-                    ><span class="ml-2">Microchipped</span>
+                    ></BaseIcon>
+                    <span class="ml-2">Microchipped</span>
                   </li>
-                  <li class="mt-4">
-                    <Icon name="twemoji:worm" size="24px"></Icon
-                    ><span class="ml-2">De-wormed</span>
+                  <li
+                    class="flex items-center justify-center mt-4 lg:justify-start"
+                  >
+                    <BaseIcon name="i-twemoji-worm" height="24px"></BaseIcon>
+                    <span class="ml-2">De-wormed</span>
                   </li>
-                  <li class="mt-4">
-                    <Icon
-                      name="healthicons:sexual-reproductive-health-outline"
-                      size="24px"
+                  <li
+                    class="flex items-center justify-center mt-4 lg:justify-start"
+                  >
+                    <BaseIcon
+                      name="i-healthicons-sexual-reproductive-health-outline"
+                      height="24px"
                       class="text-indigo-600"
-                    ></Icon
-                    ><span class="ml-2">De-sexed</span>
+                    ></BaseIcon>
+                    <span class="ml-2">De-sexed</span>
                   </li>
                 </ul>
               </div>

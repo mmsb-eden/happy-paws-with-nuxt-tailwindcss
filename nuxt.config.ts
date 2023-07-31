@@ -1,4 +1,5 @@
 // import { fileURLToPath, URL } from 'node:url'
+import presetIcons from '@unocss/preset-icons'
 
 export default defineNuxtConfig({
   runtimeConfig: {
@@ -21,14 +22,14 @@ export default defineNuxtConfig({
   },
   modules: [
     '@pinegrow/nuxt-module',
-    'nuxt-icon',
+    '@unocss/nuxt',
     '@nuxt/devtools',
     '@nuxt/content',
     '@vueuse/nuxt',
   ],
   pinegrow: {
     liveDesigner: {
-      iconPreferredCase: 'iconify', // nuxt-icon uses iconfiy format for icon names
+      iconPreferredCase: 'unocss', // default value (can be removed), unocss by default uses the unocss format for icon names names
       devtoolsKey: 'devtools', // see plugins/devtools.client.ts
       tailwindcss: {
         configPath: 'tailwind.config.ts',
@@ -73,5 +74,12 @@ export default defineNuxtConfig({
     highlight: {
       theme: 'dracula-soft',
     },
+  },
+  unocss: {
+    presets: [
+      presetIcons({
+        prefix: 'i-', // default prefix, do not change
+      }),
+    ],
   },
 })

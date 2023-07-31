@@ -56,7 +56,10 @@
             class="flex font-medium text-sm"
             @click="scrollBehavior"
             ><span>Back to top</span>
-            <Icon name="material-symbols:arrow-upward" class="ml-1"></Icon>
+            <BaseIcon
+              name="i-material-symbols-arrow-upward"
+              class="ml-1"
+            ></BaseIcon>
           </BaseButton>
         </div>
       </li>
