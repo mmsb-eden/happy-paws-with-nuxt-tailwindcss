@@ -72,6 +72,10 @@
           "name": "MyButton",
           "attributes": [
             {
+              "name": "label",
+              "placeholder": "My Button"
+            },
+            {
               "name": "size",
               "customType": "select",
               "default": "sm",
