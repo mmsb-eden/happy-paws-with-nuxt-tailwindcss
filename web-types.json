@@ -29,7 +29,7 @@
               ]
             },
             {
-              "name": "width",
+              "name": "height",
               "customType": "select",
               "default": "24px",
               "options": [
