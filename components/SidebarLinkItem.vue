@@ -1,5 +1,5 @@
 <script setup lang="ts">
-  import type { SideBarItem } from '~/composables/config'
+  import type { SideBarItem } from '~/types'
 
   const props = defineProps<{
     item: SideBarItem

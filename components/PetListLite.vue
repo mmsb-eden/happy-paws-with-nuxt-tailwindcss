@@ -22,14 +22,17 @@
             </p>
           </div>
           <div class="px-4 text-center w-full">
-            <BaseButton size="xl" to="/adopt" color="secondary">
-              <span>Meet Them All ></span>
+            <BaseButton size="xl" to="/adopt" color="secondary"
+              ><span>Meet Them All ></span>
             </BaseButton>
           </div>
         </div>
         <div class="flex flex-wrap -mx-4 justify-center">
-          <PetCard v-for="(pet, index) in petsLite" v-bind="pet" :key="index">
-          </PetCard>
+          <PetCard
+            v-for="(pet, index) in petsLite"
+            :key="index"
+            v-bind="pet"
+          ></PetCard>
         </div>
       </div>
     </div>

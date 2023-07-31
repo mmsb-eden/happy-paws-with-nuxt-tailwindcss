@@ -220,14 +220,15 @@
     :aria-label="ariaLabel"
     v-bind="buttonProps"
   >
+    <slot name="leading"></slot>
     <Icon
       v-if="isLeading && leadingIconName"
       :name="leadingIconName"
       :class="leadingIconClass"
       aria-hidden="true"
     />
-    <slot
-      ><span
+    <slot>
+      <span
         v-if="label"
         :class="[truncate ? 'text-left break-all line-clamp-1' : '']"
       >
@@ -240,6 +241,7 @@
       :class="trailingIconClass"
       aria-hidden="true"
     />
+    <slot name="trailing"></slot>
   </component>
 </template>
 <style scoped></style>
