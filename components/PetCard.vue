@@ -44,7 +44,7 @@
       <p class="mb-6 text-secondary-600 dark:text-secondary-200 text-sm">
         {{ breed }}
       </p>
-      <BaseButton size="lg" :to="`/adopt/${id}`">
+      <BaseButton size="lg">
         <span>Adopt Now</span>
         <Icon
           name="ri:heart-add-fill"

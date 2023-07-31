@@ -1,13 +1,11 @@
 <script setup lang="ts">
-  const { id } = useRoute().params
+  const route = useRoute()
+  const { id: petId } = route.params
 
-  const { data: pet } = await useAsyncData('pet', async () => {
-    const pet = await usePet(id)
-    return pet
-  })
+  const pet = await usePet(+petId)
 
   useHead({
-    title: () => pet.value?.name,
+    title: computed(() => pet.value?.name || ''),
   })
 </script>
 <template>

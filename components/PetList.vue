@@ -1,8 +1,5 @@
 <script setup lang="ts">
-  const { data: pets } = await useAsyncData('pets', async () => {
-    const pets = await usePets()
-    return pets.sort()
-  })
+  const { allPets: pets } = await usePets()
 </script>
 <template>
   <div>

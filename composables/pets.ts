@@ -1,14 +1,15 @@
-import { pets } from '~/db.json'
+export const usePets = async () => {
+  // const { data, error } = await useFetch('/api/adopt/external-data')
+  const { data, error } = await useFetch('/api/adopt/local-data')
 
-// const apiBaseUrl =
-//   'https://my-json-server.typicode.com/pinegrow/happy-paws-with-nuxt-tailwindcss'
+  const { allPets, somePets } = data.value
 
-export function usePets() {
-  return pets
-  // return $fetch(`${apiBaseUrl}/pets`)
-}
+  if (error.value) {
+    throw createError({
+      ...error.value,
+      statusMessage: `Couldn't fetch pet profiles.`,
+    })
+  }
 
-export function usePet(id) {
-  return pets.find((pet) => `${pet.id}` === id)
-  // return $fetch(`${apiBaseUrl}/pets/${id}`)
+  return { allPets, somePets }
 }

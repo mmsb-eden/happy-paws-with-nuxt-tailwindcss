@@ -1,8 +1,5 @@
 <script setup lang="ts">
-  const { data: petsLite } = await useAsyncData('pets', async () => {
-    const pets = await usePets()
-    return pets.sort().slice(0, pets.length / 2)
-  })
+  const { somePets: pets } = await usePets()
 </script>
 <template>
   <div class="bg-primary-100 dark:bg-primary-700">
@@ -29,7 +26,7 @@
         </div>
         <div class="flex flex-wrap -mx-4 justify-center">
           <PetCard
-            v-for="(pet, index) in petsLite"
+            v-for="(pet, index) in pets"
             :key="index"
             v-bind="pet"
           ></PetCard>

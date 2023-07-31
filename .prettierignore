@@ -13,5 +13,3 @@ _pgbackup
 _pginfo
 #optional
 pinegrow.json
-*.d.ts
-!shims.d.ts
