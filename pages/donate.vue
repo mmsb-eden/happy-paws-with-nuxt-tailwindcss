@@ -1,8 +1,8 @@
 <script setup lang="ts">
-  // definePageMeta({
-  //   title: 'Donate',
-  //   navOrder: 3,
-  // })
+  definePageMeta({
+    title: 'Donate',
+    navOrder: 3,
+  })
 
   useHead({
     title: () => 'Donate',

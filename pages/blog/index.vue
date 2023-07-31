@@ -1,8 +1,8 @@
 <script setup lang="ts">
-  // definePageMeta({
-  //   title: 'Blog',
-  //   navOrder: 5,
-  // })
+  definePageMeta({
+    title: 'Blog',
+    navOrder: 5,
+  })
 
   useHead({
     title: () => 'Blog',

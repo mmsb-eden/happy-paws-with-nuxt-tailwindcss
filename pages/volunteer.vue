@@ -1,9 +1,9 @@
 <script setup lang="ts">
-  // definePageMeta({
-  //   title: 'Volunteer',
-  //   tags: [],
-  //   navOrder: 6,
-  // })
+  definePageMeta({
+    title: 'Volunteer',
+    tags: [],
+    navOrder: 6,
+  })
 
   useHead({
     title: () => 'Volunteer',

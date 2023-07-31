@@ -1,8 +1,8 @@
 <script setup>
-  // definePageMeta({
-  //   title: 'Adopt Now',
-  //   navOrder: 2,
-  // })
+  definePageMeta({
+    title: 'Adopt Now',
+    navOrder: 2,
+  })
 
   useHead({
     title: () => 'Adopt Now',
