@@ -23,7 +23,7 @@
         <div
           class="max-w-none dark:prose-invert lg:prose-lg mx-auto prose prose-neutral-800 dark:prose-neutral-100"
         >
-          <content-renderer excerpt :value="post"></content-renderer>
+          <ContentRenderer excerpt :value="post"></ContentRenderer>
         </div>
       </div>
       <h6>
