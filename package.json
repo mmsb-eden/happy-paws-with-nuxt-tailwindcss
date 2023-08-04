@@ -43,7 +43,8 @@
     "typescript": "^5.0.4"
   },
   "dependencies": {
-    "@vueuse/core": "^10.1.2"
+    "@vueuse/core": "^10.1.2",
+    "vuetify": "^3.3.11"
   },
   "web-types": "web-types.json"
 }
