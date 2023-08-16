@@ -26,6 +26,8 @@ export default defineNuxtConfig({
     '@nuxt/devtools',
     '@nuxt/content',
     '@vueuse/nuxt',
+    '@pinia/nuxt',
+    '@nuxtjs/html-validator',
   ],
   pinegrow: {
     liveDesigner: {
@@ -81,5 +83,17 @@ export default defineNuxtConfig({
         prefix: 'i-', // default prefix, do not change
       }),
     ],
+  },
+  pinia: {
+    autoImports: [
+      // automatically imports `defineStore`
+      'defineStore', // import { defineStore } from 'pinia'
+      ['defineStore', 'definePiniaStore'], // import { defineStore as definePiniaStore } from 'pinia'
+      'storeToRefs',
+      'acceptHMRUpdate',
+    ],
+  },
+  imports: {
+    dirs: ['stores'],
   },
 })
