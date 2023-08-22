@@ -1,4 +1,4 @@
-import { Pets } from '~/types/pets'
+import { Pets } from '@/types/pets'
 
 export let allPets: Pets
 export let somePets: Pets

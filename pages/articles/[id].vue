@@ -1,5 +1,5 @@
 <script setup lang="ts">
-  import { useArticles } from '~/composables/articles'
+  import { useArticles } from '@/composables/articles'
 
   const articleId = useRoute().params.id
 

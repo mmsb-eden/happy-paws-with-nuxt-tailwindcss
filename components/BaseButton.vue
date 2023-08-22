@@ -3,8 +3,8 @@
   import type { PropType } from 'vue'
   import type { RouteLocationRaw } from 'vue-router'
   import { defu } from 'defu'
-  import { classNames } from '~/utils'
-  import { colors } from '~/utils/colors'
+  import { classNames } from '@/utils'
+  import { colors } from '@/utils/colors'
   import { NuxtLink } from '#components'
   // import { useAppConfig } from '#imports'
   // TODO: Remove
