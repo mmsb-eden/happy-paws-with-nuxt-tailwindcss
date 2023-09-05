@@ -32,20 +32,18 @@
       class="m-3 text-neutral-900 dark:text-neutral-100 bg-neutral-50 dark:bg-neutral-900 px-6 py-12 rounded-3xl shadow-xl text-center"
     >
       <img
-        :src="imageUrl"
         class="mb-4 mx-auto rounded-xl w-full sm:w-9/12"
         alt="..."
         width="600"
         height="600"
+        :src="imageUrl"
       />
-      <h5 class="font-bold mb-2">
-        {{ name }}
-      </h5>
+      <h5 class="font-bold mb-2">{{ name }}</h5>
       <p class="mb-6 text-secondary-600 dark:text-secondary-200 text-sm">
         {{ breed }}
       </p>
-      <BaseButton size="lg">
-        <span>Adopt Now</span>
+      <BaseButton size="lg" :to="`/adopt/${id}`"
+        ><span>Adopt Now</span>
         <BaseIcon
           name="i-ri-heart-add-fill"
           height="20px"
