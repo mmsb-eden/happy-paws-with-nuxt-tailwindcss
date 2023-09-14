@@ -2,6 +2,7 @@
 import presetIcons from '@unocss/preset-icons'
 
 export default defineNuxtConfig({
+  // ssr: false,
   runtimeConfig: {
     public: {
       title: `Happy Paws`,

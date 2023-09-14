@@ -26,7 +26,7 @@
       { property: 'keywords', content: route.meta.tags?.toString() },
       { property: 'author', content: 'Pinegrow' },
     ],
-    script: [{ children: checkDarkTheme, once: true } as TurboScript],
+    script: [{ innerHTML: checkDarkTheme, once: true } as TurboScript],
   })
 </script>
 
