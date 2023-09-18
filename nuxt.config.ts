@@ -29,6 +29,7 @@ export default defineNuxtConfig({
     '@vueuse/nuxt',
     '@pinia/nuxt',
     '@nuxtjs/html-validator',
+    '@nuxt/image',
   ],
   pinegrow: {
     liveDesigner: {
