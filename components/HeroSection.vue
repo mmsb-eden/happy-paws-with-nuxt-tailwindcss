@@ -47,7 +47,6 @@
     }
   })
 </script>
-
 <template>
   <section class="container mx-auto pb-12 px-4">
     <div
