@@ -11,12 +11,10 @@
     <div class="container mx-auto px-4 py-12 relative">
       <div class="-mx-4 flex flex-wrap items-center">
         <div class="p-4 w-full lg:w-2/5">
-          <img
+          <NuxtPicture
             src="https://images.unsplash.com/photo-1561438774-1790fe271b8f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwyMDkyMnwwfDF8c2VhcmNofDEyfHxoYXBweSUyMGRvZ3xlbnwwfHx8fDE2ODMyOTgzOTc&ixlib=rb-4.0.3&q=80&w=1080"
-            class="mb-6 rounded-3xl"
-            alt="..."
-            width="800"
-            height="600"
+            class="[&>img]:mb-6 [&>img]:rounded-3xl [&>img]:w-full"
+            alt="Stats"
           />
         </div>
         <div class="lg:w-6/12 mx-auto p-4 w-full">

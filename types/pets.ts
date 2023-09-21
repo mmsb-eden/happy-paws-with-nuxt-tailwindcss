@@ -1,10 +1,13 @@
+import { ImageOptimized } from './image'
+
 export type Pet = {
   id: number
   name: string
   breed: string
   sex: string
   dateOfBirth: string
-  imageUrl: string
+  image: string
+  imageOptimized?: ImageOptimized
   microchip: string
   location: string
 }

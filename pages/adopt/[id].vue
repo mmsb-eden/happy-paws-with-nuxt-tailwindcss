@@ -40,12 +40,10 @@
               class="flex flex-wrap justify-center text-center w-full lg:flex-nowrap lg:text-left"
             >
               <div class="w-full">
-                <img
-                  :src="pet.imageUrl"
-                  class="rounded-xl w-full"
-                  alt="..."
-                  width="600"
-                  height="600"
+                <NuxtPicture
+                  :src="pet.image"
+                  class="[&>img]:rounded-xl [&>img]:w-full"
+                  :alt="pet.name"
                 />
               </div>
               <div class="py-8 w-full sm:px-16">

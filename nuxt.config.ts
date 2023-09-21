@@ -60,6 +60,37 @@ export default defineNuxtConfig({
       autoprefixer: {},
     },
   },
+
+  image: {
+    // sizes: 'xs:100vw sm:100vw md:100vw lg:100vw xl:100vw', // Not yet supported - https://github.com/nuxt/image/issues/216
+    // densities: [1,2], // default
+    quality: 80, // can be overridden as NuxtImg prop
+    format: ['webp'], // default
+    // The screen sizes predefined by `@nuxt/image`:
+    // screens: {
+    //   xs: 320,
+    //   sm: 640,
+    //   md: 768,
+    //   lg: 1024,
+    //   xl: 1280,
+    //   xxl: 1536,
+    //   '2xl': 1536,
+    // },
+    presets: {
+      avatar: {
+        modifiers: {
+          format: 'webp',
+          width: 80,
+          height: 80,
+        },
+      },
+    },
+    domains: ['images.unsplash.com', 'fakestoreapi.com', 'res.cloudinary.com'],
+    alias: {
+      unsplash: 'https://images.unsplash.com',
+    },
+  },
+
   content: {
     markdown: {
       toc: {

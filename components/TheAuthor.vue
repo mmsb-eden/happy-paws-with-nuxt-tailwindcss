@@ -18,15 +18,16 @@
         <li class="flex items-center space-x-2">
           <img
             v-if="gravatar"
-            :src="'https://gravatar.com/avatar/' + gravatar"
-            alt="author image"
             class="w-10 h-10 rounded-3xl"
+            alt="author image"
+            :src="'https://gravatar.com/avatar/' + gravatar"
           />
+
           <img
             v-else-if="avatar"
-            :src="avatar"
-            alt="author image"
             class="w-10 h-10 rounded-3xl"
+            alt="author image"
+            :src="avatar"
           />
           <dl class="text-sm font-medium leading-5 whitespace-nowrap">
             <dt class="sr-only">Name</dt>
