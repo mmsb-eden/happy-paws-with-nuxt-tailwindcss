@@ -3,34 +3,30 @@ import presetIcons from '@unocss/preset-icons'
 
 export default defineNuxtConfig({
   // ssr: false,
-  runtimeConfig: {
-    public: {
-      title: `Happy Paws`,
-      description: 'Adopt Your Fur Mate',
-      author: 'Pinegrow',
-      nav: [
-        { text: 'Home', link: '/' },
-        { text: 'Adopt Now', link: '/adopt' },
-        { text: 'Donate', link: '/donate' },
-        { text: 'Articles', link: '/articles' },
-        { text: 'Blog', link: '/blog' },
-        { text: 'Volunteer', link: '/volunteer' },
-      ],
-    },
-    app: {
-      baseURL: '/',
+  devtools: { enabled: false }, // Disable when using Vue devtools
+
+  // spaLoadingTemplate: false, // check app/spa-loading-template.html for custom loading screen
+
+  // Look into MetaTags.vue for other flavours
+  app: {
+    baseURL: '/',
+    head: {
+      meta: [{ charset: 'utf-8' }],
     },
   },
+
   modules: [
     '@pinegrow/nuxt-module',
     '@unocss/nuxt',
-    // '@nuxt/devtools',
+    '@nuxt/devtools',
     '@nuxt/content',
     '@vueuse/nuxt',
     '@pinia/nuxt',
     '@nuxtjs/html-validator',
     '@nuxt/image',
+    '@vee-validate/nuxt',
   ],
+
   pinegrow: {
     liveDesigner: {
       iconPreferredCase: 'unocss', // default value (can be removed), unocss by default uses the unocss format for icon names names
@@ -53,6 +49,7 @@ export default defineNuxtConfig({
       // ],
     },
   },
+
   css: ['~/assets/css/tailwind.css'],
   postcss: {
     plugins: {
@@ -91,6 +88,18 @@ export default defineNuxtConfig({
     },
   },
 
+  veeValidate: {
+    // disable or enable auto imports
+    autoImports: true,
+    // Use different names for components
+    componentNames: {
+      Form: 'VeeForm',
+      Field: 'VeeField',
+      FieldArray: 'VeeFieldArray',
+      ErrorMessage: 'VeeErrorMessage',
+    },
+  },
+
   content: {
     markdown: {
       toc: {
@@ -113,6 +122,7 @@ export default defineNuxtConfig({
       theme: 'dracula-soft',
     },
   },
+
   unocss: {
     presets: [
       presetIcons({
@@ -120,6 +130,7 @@ export default defineNuxtConfig({
       }),
     ],
   },
+
   pinia: {
     autoImports: [
       // automatically imports `defineStore`
@@ -129,7 +140,13 @@ export default defineNuxtConfig({
       'acceptHMRUpdate',
     ],
   },
+
   imports: {
     dirs: ['stores'],
+  },
+
+  sourcemap: {
+    client: false,
+    server: false,
   },
 })
