@@ -24,6 +24,7 @@ export async function listArticles(
   tags: string | string[] = [],
   state: State = 'fresh',
   page: number = 1,
+  per_page: number = 10,
 ): Promise<Articles> {
   // username?: string,
   // tag: string = 'vue',
@@ -32,7 +33,7 @@ export async function listArticles(
   tags = tags.join(',')
   const params = username.value
     ? { username: username.value, state }
-    : { username: username.value, tag: tag.value, tags, state, page }
+    : { username: username.value, tag: tag.value, tags, state, page, per_page }
   articles.value = await fetchArticles('', params)
   return articles.value
 }
