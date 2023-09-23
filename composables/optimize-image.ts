@@ -48,9 +48,9 @@ export const useOptimizeImage = () => {
     }
 
     imageOptimized.bgStyles = [
-      responsiveImageSrc,
+      // responsiveImageSrc,
       responsiveImageSrcImageSet,
-      responsiveImageSrcImageSetFallback,
+      // responsiveImageSrcImageSetFallback,
     ]
 
     return imageOptimized
