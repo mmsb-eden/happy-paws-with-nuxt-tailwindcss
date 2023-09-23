@@ -5,8 +5,6 @@ export default defineNuxtConfig({
   // ssr: false,
   devtools: { enabled: false }, // Disable when using Vue devtools
 
-  // spaLoadingTemplate: false, // check app/spa-loading-template.html for custom loading screen
-
   // Look into MetaTags.vue for other flavours
   app: {
     baseURL: '/',
