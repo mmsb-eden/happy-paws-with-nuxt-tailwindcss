@@ -11,8 +11,7 @@
 <template>
   <section class="container mx-auto pb-12 px-4">
     <div
-      class="bg-center bg-cover bg-no-repeat blur-none rounded-3xl z-0"
-      :style="bgStyles"
+      class="bg-center bg-cover bg-no-repeat blur-none rounded-3xl z-0 bg-design-image lg:bg-design-image-large"
     >
       <div class>
         <div class="lg:px-12 md:py-36 pb-6 pt-72 px-6 relative rounded-3xl">

@@ -40,9 +40,9 @@
               class="flex flex-wrap justify-center text-center w-full lg:flex-nowrap lg:text-left"
             >
               <div class="w-full">
-                <NuxtPicture
+                <img
                   :src="pet.image"
-                  class="[&>img]:rounded-xl [&>img]:w-full"
+                  class="rounded-xl w-full"
                   :alt="pet.name"
                 />
               </div>
