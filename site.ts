@@ -2,7 +2,7 @@ export default {
   title: `Happy Paws`,
   description: 'Adopt Your Fur Mate',
   author: 'Pinegrow',
-  url: 'https://happy-paws-with-nuxt-tailwindcss.netlify.app/',
+  url: 'https://happy-paws-with-nuxt-tailwindcss.netlify.app',
   nav: [
     { text: 'Home', link: '/' },
     { text: 'Adopt Now', link: '/adopt' },
