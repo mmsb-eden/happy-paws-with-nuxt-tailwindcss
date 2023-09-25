@@ -1,8 +1,6 @@
-import image from '@/screenshots/happy-paws.jpg'
 export default {
   title: `Happy Paws`,
   description: 'Adopt Your Fur Mate',
-  image,
   author: 'Pinegrow',
   url: 'https://happy-paws-with-nuxt-tailwindcss.netlify.app/',
   nav: [
