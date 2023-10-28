@@ -1,12 +1,13 @@
 <script setup lang="ts">
   definePageMeta({
+    // layout: 'default',
+    // name: 'volunteer',
+    // alias: 'volunteer',
     title: 'Volunteer',
-    tags: [],
-    navOrder: 6,
-  })
-
-  useHead({
-    title: () => 'Volunteer',
+    description: `Don't Miss Out – Stay in the Know, Subscribe Today!`,
+    navOrder: '6',
+    type: 'secondary',
+    icon: 'i-mdi-home',
   })
 </script>
 <template>

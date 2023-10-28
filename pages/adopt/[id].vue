@@ -1,11 +1,27 @@
 <script setup lang="ts">
+  definePageMeta({
+    // layout: 'default',
+    // name: 'blog',
+    // alias: 'blog',
+    title: 'Adopt Now',
+    description: 'Adopt Your Fur Mate!',
+    hidden: true,
+    navOrder: 2,
+    type: 'primary',
+    icon: 'i-mdi-home',
+  })
+
   const route = useRoute()
   const { id: petId } = route.params
 
   const pet = await usePet(+petId)
 
+  useServerSeoMeta({
+    description: () => pet.value?.name,
+  })
+
   useHead({
-    title: computed(() => pet.value?.name || ''),
+    title: () => pet.value?.name,
   })
 </script>
 <template>
@@ -40,7 +56,7 @@
               class="flex flex-wrap justify-center text-center w-full lg:flex-nowrap lg:text-left"
             >
               <div class="w-full">
-                <img
+                <NuxtImg
                   :src="pet.image"
                   class="rounded-xl w-full"
                   :alt="pet.name"

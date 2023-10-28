@@ -1,11 +1,13 @@
 <script setup lang="ts">
   definePageMeta({
+    // layout: 'default',
+    // name: 'articles',
+    // alias: 'articles',
     title: 'Articles',
+    description: 'Devour Knowledge, One Article at a Time!',
     navOrder: 4,
-  })
-
-  useHead({
-    title: () => 'Articles',
+    type: 'secondary',
+    icon: 'i-mdi-home',
   })
 </script>
 <template>

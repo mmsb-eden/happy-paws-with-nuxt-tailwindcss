@@ -19,10 +19,9 @@ export async function getPosts() {
   return computed(() => posts.value.sort(byDate))
 }
 
-export async function getPost() {
-  const slug = useRoute().params.slug.toString().replace(/,/g, '/')
-  const { data: post } = await useAsyncData(slug, () => {
-    return queryContent('blog', slug).findOne()
+export async function getPost(base: string = '/', path: string) {
+  const { data: post } = await useAsyncData(path, () => {
+    return queryContent(base, path).findOne()
   })
 
   return post

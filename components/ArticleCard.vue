@@ -28,7 +28,8 @@
                   class="inline-flex items-center space-x-2"
                   variant="ghost"
                 >
-                  <img
+                  <NuxtImg
+                    preset="avatar"
                     class="h-12 rounded-3xl w-12"
                     :alt="article.user.name"
                     :src="article.user.profile_image"

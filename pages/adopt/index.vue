@@ -1,11 +1,13 @@
 <script setup>
   definePageMeta({
+    // layout: 'default',
+    // name: 'blog',
+    // alias: 'blog',
     title: 'Adopt Now',
+    description: 'Adopt Your Fur Mate!',
     navOrder: 2,
-  })
-
-  useHead({
-    title: () => 'Adopt Now',
+    type: 'primary',
+    icon: 'i-mdi-home',
   })
 </script>
 <template>

@@ -1,11 +1,13 @@
 <script setup lang="ts">
   definePageMeta({
+    // layout: 'default',
+    // name: 'blog',
+    // alias: 'blog',
     title: 'Blog',
+    description: 'Read, Learn, Enjoy: Your Blog Destination!',
     navOrder: 5,
-  })
-
-  useHead({
-    title: () => 'Blog',
+    type: 'secondary',
+    icon: 'i-mdi-home',
   })
 </script>
 <template>

@@ -1,9 +1,21 @@
 <script setup lang="ts">
-  const post = await getPost()
-
-  useHead({
-    title: post.value.title,
+  definePageMeta({
+    // layout: 'default',
+    // name: 'slug',
+    // alias: 'slug',
+    title: 'Blog',
+    description: 'Read, Learn, Enjoy: Your Blog Destination!',
+    hidden: true,
+    navOrder: 5,
+    type: 'secondary',
+    icon: 'i-mdi-home',
   })
+
+  const slug =
+    useRoute().params.slug.toString().replace(/,/g, '/') ||
+    useRoute().name.toString().replace(/,/g, '/')
+
+  const post = await getPost('blog', slug)
 
   // const currentIndex = computed(() =>
   //   posts.value.findIndex((p) => p.href === page.value.href),
@@ -15,6 +27,14 @@
   const author = computed(() => {
     const { twitter, avatar, gravatar, author } = post.value
     return { twitter, avatar, gravatar, author }
+  })
+
+  useServerSeoMeta({
+    description: () => post.value?.title,
+  })
+
+  useHead({
+    title: () => post.value?.title,
   })
 </script>
 <template>
@@ -52,16 +72,7 @@
             <div
               class="dark:divide-gray-700 divide-gray-200 divide-y xl:col-span-3 xl:pb-0 xl:row-span-2"
             >
-              <div
-                id="post"
-                class="dark:prose-invert dark:prose-neutral-100 prose prose-neutral-800 pt-10 md:max-w-none lg:prose-lg"
-              >
-                <ContentRenderer :value="post">
-                  <template #empty>
-                    <p>No content found.</p>
-                  </template>
-                </ContentRenderer>
-              </div>
+              <StaticMarkdown base="blog" :path="slug" />
             </div>
             <div class="hidden">
               <footer

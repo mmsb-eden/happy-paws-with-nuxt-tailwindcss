@@ -13,7 +13,7 @@
     {
       img: 'https://images.unsplash.com/photo-1415369629372-26f2fe60c467?ixid=MnwyMDkyMnwwfDF8c2VhcmNofDR8fHBldHxlbnwwfHx8fDE2MzA0NjI1MjM&ixlib=rb-1.2.1q=85&fm=jpg&crop=faces&cs=srgb&w=900&h=1000&fit=crop',
       action: 'Donate',
-      to: '/donate',
+      to: '/quick-start',
     },
   ]
 </script>

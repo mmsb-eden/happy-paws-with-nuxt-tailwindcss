@@ -28,7 +28,7 @@
       class="flex flex-col h-full overflow-hidden rounded-lg shadow surface-container"
     >
       <NuxtLink class="-mt-2 -mx-6" :to="articleLink">
-        <img :alt="article.title" :src="article.social_image" />
+        <NuxtImg :alt="article.title" :src="article.social_image" />
       </NuxtLink>
       <div class="grow p-4">
         <NuxtLink class="-mx-6 mb-2 whitespace-pre-wrap" :to="articleLink">
@@ -61,7 +61,8 @@
             variant="ghost"
             @click="fetchUser(article.user.username)"
           >
-            <img
+            <NuxtImg
+              preset="avatar"
               class="h-12 rounded-3xl w-12"
               :alt="article.user.name"
               :src="article.user.profile_image"

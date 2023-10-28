@@ -1,4 +1,4 @@
-import { Pet, Pets } from '@/types/pets'
+import type { Pet, Pets } from '@/types/pets'
 import { pets } from '@/db.json'
 
 pets as Pets

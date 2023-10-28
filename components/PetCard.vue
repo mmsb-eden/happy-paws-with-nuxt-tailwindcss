@@ -1,5 +1,5 @@
 <script setup lang="ts">
-  import { Pet } from '../types/pets'
+  import type { Pet } from '../types/pets'
   const { id, name, breed, image } = defineProps<Pet>()
 </script>
 <template>
@@ -7,7 +7,12 @@
     <div
       class="m-3 text-neutral-900 dark:text-neutral-100 bg-neutral-50 dark:bg-neutral-900 px-6 py-12 rounded-3xl shadow-xl text-center"
     >
-      <img
+      <!-- <img
+        class="mb-4 mx-auto rounded-xl w-full sm:w-9/12"
+        :alt="name"
+        :src="image"
+      /> -->
+      <NuxtImg
         class="mb-4 mx-auto rounded-xl w-full sm:w-9/12"
         :alt="name"
         :src="image"
