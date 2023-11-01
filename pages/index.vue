@@ -35,13 +35,13 @@
   const bgStyles = heroImageOptimized.bgStyles
 </script>
 <template>
-  <main>
+  <div>
     <HeroSection />
     <CallToAction />
     <MiniDivider />
     <OurMission />
     <PetListLite />
     <StatsSection />
-  </main>
+  </div>
 </template>
 <style scoped></style>
