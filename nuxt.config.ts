@@ -68,13 +68,27 @@ export default defineNuxtConfig({
     },
   },
 
-  css: ['~/assets/css/tailwind.css'],
+  css: [
+    '~/assets/css/tailwind.css',
+    // 'lite-youtube-embed/src/lite-yt-embed.css',
+  ],
 
   postcss: {
     plugins: {
       'tailwindcss/nesting': {},
       tailwindcss: {},
       autoprefixer: {},
+    },
+  },
+
+  vite: {
+    vue: {
+      template: {
+        transformAssetUrls: {
+          NuxtImg: ['src'],
+          OgImage: ['image'],
+        },
+      },
     },
   },
 
@@ -113,6 +127,7 @@ export default defineNuxtConfig({
       'avatars.githubusercontent.com',
       'gravatar.com',
     ],
+
     alias: {
       unsplash: 'https://images.unsplash.com',
     },
