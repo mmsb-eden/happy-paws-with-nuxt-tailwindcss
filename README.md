@@ -72,6 +72,8 @@ You can deploy this repo as a site on your own to explore and experiment with, b
 
 Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
 
+## Pre-packed
+
 ### Meta Framework (Vue-based)
 
 - [Nuxt](https://nuxt.com/) - The Intuitive Vue Framework
