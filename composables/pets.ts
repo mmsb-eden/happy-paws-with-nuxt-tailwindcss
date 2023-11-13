@@ -14,7 +14,7 @@ export const usePets = async () => {
     })
   }
 
-  const fetchBreed = (breed: string) => {
+  const fetchBreed = (breed?: string) => {
     // // Optimize any image urls in the data contents
     // const { optimizeImage } = useOptimizeImage()
 
