@@ -22,41 +22,50 @@
     "format": "prettier --write \"**/*.{vue,js,jsx,cjs,mjs,ts,tsx,cts,mts,html,css,md,mdx,json}\" !public --ignore-path .gitignore"
   },
   "dependencies": {
-    "@pinia/nuxt": "^0.5.1",
-    "@vee-validate/nuxt": "^4.12.6",
-    "@vueuse/core": "^10.9.0",
-    "lite-youtube-embed": "^0.3.2",
-    "pinia": "^2.1.7"
+    "@pinia/nuxt": "^0.4.11",
+    "@vee-validate/nuxt": "^4.11.6",
+    "@vueuse/core": "^10.4.1",
+    "lite-youtube-embed": "^0.2.0",
+    "pinia": "^2.1.6"
   },
   "devDependencies": {
-    "@iconify/json": "^2.2.194",
-    "@nuxt/content": "^2.12.1",
-    "@nuxt/eslint-config": "^0.2.0",
-    "@nuxt/image": "^1.4.0",
-    "@nuxtjs/critters": "^0.6.0",
+    "@iconify/json": "^2.2.96",
+    "@nuxt/content": "^2.8.2",
+    "@nuxt/devtools": "^0.7.1",
+    "@nuxt/eslint-config": "^0.1.1",
+    "@nuxt/image": "^1.0.0",
+    "@nuxtjs/critters": "^0.5.1",
     "@nuxtjs/fontaine": "^0.4.1",
-    "@nuxtjs/html-validator": "^1.6.0",
-    "@nuxtjs/seo": "^2.0.0-rc.9",
+    "@nuxtjs/html-validator": "^1.5.2",
+    "@nuxtseo/module": "^2.0.0-beta.39",
     "@pinegrow/nuxt-module": "^3.0.52",
-    "@pinegrow/tailwindcss-plugin": "^3.0.20",
-    "@tailwindcss/forms": "^0.5.7",
-    "@tailwindcss/typography": "^0.5.10",
-    "@types/node": "^20.11.30",
-    "@unocss/nuxt": "^0.58.6",
-    "@unocss/preset-icons": "^0.58.6",
-    "@vue/devtools": "^7.0.19",
-    "@vueuse/nuxt": "^10.9.0",
-    "autoprefixer": "^10.4.18",
-    "eslint": "^8.57.0",
-    "eslint-config-prettier": "^9.1.0",
+    "@pinegrow/tailwindcss-plugin": "^3.0.18",
+    "@tailwindcss/forms": "^0.5.3",
+    "@tailwindcss/typography": "^0.5.9",
+    "@types/node": "^20.5.0",
+    "@unocss/nuxt": "^0.54.1",
+    "@unocss/preset-icons": "^0.54.1",
+    "@vue/devtools": "^6.5.0",
+    "@vueuse/nuxt": "^10.4.1",
+    "autoprefixer": "^10.4.14",
+    "eslint": "^8.36.0",
+    "eslint-config-prettier": "^8.7.0",
     "npm-run-all": "^4.1.5",
-    "nuxt": "^3.11.1",
-    "nuxt-icon": "^0.6.9",
-    "postcss": "^8.4.37",
-    "prettier": "^3.2.5",
+    "nuxt": "^3.7.3",
+    "nuxt-icon": "^0.6.1",
+    "postcss": "^8.4.22",
+    "prettier": "^2.8.4",
     "rehype-external-links": "^3.0.0",
-    "tailwindcss": "^3.4.1",
-    "typescript": "^5.4.2"
+    "tailwindcss": "^3.3.1",
+    "typescript": "^5.0.4"
+  },
+  "pnpm": {
+    "overrides": {
+      "nuxi": "3.8.4"
+    }
+  },
+  "overrides": {
+    "nuxi": "3.8.4"
   },
   "web-types": "web-types.json"
 }

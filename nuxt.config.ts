@@ -35,13 +35,14 @@ export default defineNuxtConfig({
   modules: [
     '@pinegrow/nuxt-module',
     '@unocss/nuxt',
+    '@nuxt/devtools',
     '@nuxt/content',
     '@vueuse/nuxt',
     '@pinia/nuxt',
     // '@nuxtjs/html-validator',
     '@nuxt/image',
     '@vee-validate/nuxt',
-    '@nuxtjs/seo',
+    '@nuxtseo/module',
     '@nuxtjs/fontaine',
     '@nuxtjs/critters',
     'nuxt-icon',
@@ -100,7 +101,6 @@ export default defineNuxtConfig({
     //   xxl: 1536,
     //   '2xl': 1536,
     // },
-    provider: 'ipx',
     presets: {
       avatar: {
         modifiers: {
@@ -109,6 +109,9 @@ export default defineNuxtConfig({
           height: 80,
         },
       },
+    },
+    netlify: {
+      baseURL: url,
     },
     domains: [
       'images.unsplash.com',
@@ -151,19 +154,6 @@ export default defineNuxtConfig({
     },
     highlight: {
       theme: 'dracula-soft',
-      langs: [
-        'json',
-        'js',
-        'ts',
-        'html',
-        'css',
-        'vue',
-        'shell',
-        'mdc',
-        'md',
-        'yaml',
-        'diff',
-      ],
     },
   },
 
@@ -193,10 +183,10 @@ export default defineNuxtConfig({
   },
 
   routeRules: {
-    '/hidden': { robots: false },
+    '/hidden': { index: false },
   },
 
-  // Used by all modules in the @nuxtjs/seo collection
+  // Used by all modules in the @nuxtseo/module collection
   // https://nuxtseo.com/nuxt-seo/guides/configuring-modules
   site: {
     url,
@@ -215,7 +205,7 @@ export default defineNuxtConfig({
   },
   sitemap: {
     // https://nuxtseo.com/sitemap/guides/i18n#debugging-hreflang
-    // Open https://happy-paws-with-nuxt-tailwindcss.netlify.app/sitemap.xml
+    // Open https://the-ai-cafe.netlify.app/sitemap.xml
     xslColumns: [
       { label: 'URL', width: '50%' },
       { label: 'Last Modified', select: 'sitemap:lastmod', width: '12.5%' },
@@ -233,13 +223,16 @@ export default defineNuxtConfig({
     strictNuxtContentPaths: true,
   },
   ogImage: {
-    // OG images and nuxtseo features can be previewed with nuxt-devtools during development. OG images can also be viewed using URL in this form - `/__og-image__/image/<path>/og.<extension>. For eg, https://happy-paws-with-nuxt-tailwindcss.netlify.app/__og-image__/image/og.png
-    // fonts: ['Inter:400', 'Inter:700'],
-    //
-    // defaults: { width: 1200, height: 600, emojis: 'noto', renderer: 'satori', component: 'NuxtSeo', cacheMaxAgeSeconds: 60 * 60 * 24 * 3 },
-    //
+    // Open https://the-ai-cafe.netlify.app/__og_image__/og.png
+    // defaults: {
+    //   cacheTtl: 60 * 60 * 24 * 7, // 7 days
+    // },
     // disable at a global level
     // runtimeCacheStorage: false,
+    // or
+    // defaults: {
+    //   cache: false,
+    // },
   },
   linkChecker: {
     enabled: false,

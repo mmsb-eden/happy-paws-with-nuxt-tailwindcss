@@ -62,7 +62,7 @@
       return titleChunk ? `${titleChunk} - ${name}` : name
     },
     htmlAttrs: { lang: 'en-US' },
-    // Instead of setting meta via useHead, useServerSeoMeta or @nuxtjs/seo is used.
+    // Instead of setting meta via useHead, useServerSeoMeta or @nuxtseo/module is used.
     // meta: [
     //   { name: 'charset', content: 'utf-8' },
     //   {
@@ -84,22 +84,22 @@
     // title, // can be ignored - https://stackoverflow.com/a/21076311/9185953
     // keywords: route.meta.tags?.toString(), // can be ignored, not used anywhere
     description: theDescription,
-    // ogTitle: theTitle, // set by @nuxtjs/seo's nuxt-seo-experiments
-    // ogDescription: description, // set by @nuxtjs/seo's nuxt-seo-experiments
-    // ogType: 'website', // set by @nuxtjs/seo's nuxt-seo-experiments
-    // ogImage: image, // set by @nuxtjs/seo's nuxt-og-image
-    ogImageAlt: theTitle, // set by @nuxtjs/seo's nuxt-og-image
+    // ogTitle: theTitle, // set by @nuxtseo/module's nuxt-seo-experiments
+    // ogDescription: description, // set by @nuxtseo/module's nuxt-seo-experiments
+    // ogType: 'website', // set by @nuxtseo/module's nuxt-seo-experiments
+    // ogImage: image, // set by @nuxtseo/module's nuxt-og-image
+    ogImageAlt: theTitle, // set by @nuxtseo/module's nuxt-og-image
     // // Other values - og:image:width, og:image:height, og:image:alt, og:image:type, og:image:secure_url
-    // ogUrl: url, // set by @nuxtjs/seo
-    // ogSiteName: theTitle, // set by @nuxtjs/seo
+    // ogUrl: url, // set by @nuxtseo/module
+    // ogSiteName: theTitle, // set by @nuxtseo/module
     // // Other values - og: locale, og: type
     twitterTitle: theTitle.value,
     twitterDescription: theDescription,
-    // twitterImage: image, // set by @nuxtjs/seo & nuxt-og-image
+    // twitterImage: image, // set by @nuxtseo/module & nuxt-og-image
     twitterImageAlt: theTitle.value,
     twitterSite: '@vuedesigner',
     twitterCreator: '@techakayy',
-    // twitterCard: 'summary_large_image', // set by @nuxtjs/seo & nuxt-og-image
+    // twitterCard: 'summary_large_image', // set by @nuxtseo/module & nuxt-og-image
   })
 </script>
 
