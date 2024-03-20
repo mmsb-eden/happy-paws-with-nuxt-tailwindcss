@@ -100,7 +100,6 @@ export default defineNuxtConfig({
     //   xxl: 1536,
     //   '2xl': 1536,
     // },
-    provider: process.env.NODE_ENV === 'production' ? 'netlify' : 'ipx',
     presets: {
       avatar: {
         modifiers: {
